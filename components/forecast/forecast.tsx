@@ -41,8 +41,8 @@ export const DailyForecast = (props: ForecastProps) => {
               onClick={forecast.setCurrent}
               aria-current={forecast.active}
               className={`${
-                forecast.active ? "bg-gray-300 dark:bg-emerald-900" : ""
-              } cursor-pointer grid auto-cols-max w-52 sm:w-64 md:w-96 md:grid-cols-2 pl-6 pr-6 pt-3 pb-3 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-600 dark:border-gray-500 dark:hover:bg-gray-500`}
+                forecast.active ? "bg-gray-200 hover:bg-gray-200 dark:bg-emerald-900 dark:hover:bg-emerald-900" : "bg-white dark:bg-gray-600"
+              } cursor-pointer grid auto-cols-max w-52 sm:w-64 md:w-96 md:grid-cols-2 pl-6 pr-6 pt-3 pb-3 rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:border-gray-500 dark:hover:bg-gray-500`}
             >
               <div className="flex items-center">
                 <h1 className="text-2xl font-extrabold text-gray-900 dark:text-white">
